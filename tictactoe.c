@@ -1,9 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include<time.h>
 
 char *board;
 char player = 'X';
+int gameChoice;
+int randInt1,randInt2;
+
+int getRandomNumber(int *rand1,int *rand2){
+    srand((unsigned int)time(NULL));
+
+    *rand1 = rand()%3;
+    *rand2 = rand()%3;
+
+    
+    // printf("\nRandom number: %d\n",randInt);
+}
 
 void initializeBoard(){
     board = (char*)malloc(3*3*sizeof(char));
@@ -13,6 +26,21 @@ void initializeBoard(){
             board[i*3+j]=' ';
         }
     }
+
+
+
+}
+
+int gameMode(){
+    int choiceNumber;
+
+    printf("\nHow do you want to play this Game");
+    printf("\nPress 1 for 2 players");
+    printf("\nPress 2 to play against the computer");
+    printf("\nPress 3 for 3 players\n");
+    scanf("%d",&choiceNumber);
+
+    return choiceNumber;
 
 
 
@@ -59,7 +87,7 @@ void acceptUserInput(){
 
         board[row*3+column] = player;
 
-        if (player == 'X'){
+        if (player == 'X' && gameChoice != 2){
                 player = 'O';
                 break;
             // printf("\nPlayer has changed to O\n");
@@ -73,6 +101,19 @@ void acceptUserInput(){
     }
 
     
+
+}
+
+void acceptComputerInput(){
+    printf("\nComputers Turn\n");
+    while (board[randInt1*3+randInt2] != ' ')
+    {
+        getRandomNumber(&randInt1,&randInt2);   
+    }
+    
+    board[randInt1*3+randInt2] = 'O';
+
+
 
 }
 
@@ -124,17 +165,47 @@ int main(){
     printf("    Welcome to Tic-Tac-Toe\n");
     printf("===============================\n\n");
     initializeBoard();
-    displayBoard();
 
-    while (true)
-    {
-        acceptUserInput();
+    gameChoice = gameMode();
+    if(gameChoice == 1){
         displayBoard();
-        if (checkWin()) break;
-        if (checkDraw()) break;
+
+        while (true)
+        {
+            acceptUserInput();
+            displayBoard();
+            if (checkWin()) break;
+            if (checkDraw()) break;
+
+
+        }
+
+    }
+    else if (gameChoice == 2)
+    {
+        
+        displayBoard();
+        while(true){
+            getRandomNumber(&randInt1,&randInt2);
+            acceptUserInput();
+            displayBoard();
+            if (checkWin()) break;
+            if (checkDraw()) break;
+            acceptComputerInput();
+            displayBoard();
+            if (checkWin()) break;
+            if (checkDraw()) break;
+
+            
+        }
+
+        
 
 
     }
+    
+
+    
     
     free(board);
 
