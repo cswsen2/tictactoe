@@ -2,26 +2,38 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include<time.h>
+#include<ctype.h>
 
 char **board;
-char player = 'X';
+// char player = 'X';
 int gameChoice;
 int randInt1,randInt2;
 int boardSize;
 int askRole;
+char player;
+char players[3] = {'X','O','Z'};
+int currentPlayerIndex = 0;
+int totalPlayers;
 
 int getRandomNumber(int *rand1,int *rand2,int size){
 
     *rand1 = rand()%size;
     *rand2 = rand()%size;
 
-    
+    return 0;
     // printf("\nRandom number: %d\n",randInt);
 }
 
 void initializeBoard(){
-    printf("Enter a board size: ");
-    scanf("%d",&boardSize);
+    // printf("Enter a board size: ");
+    // scanf("%d",&boardSize);
+    
+    do{
+        printf("Enter a board size: ");
+        scanf("%d",&boardSize);
+    }while (boardSize<3 || boardSize >10);
+    
+    
 
     board = (char**)malloc(boardSize*sizeof(char*));
 
@@ -96,24 +108,15 @@ void acceptUserInput(){
             continue;
         }
 
-        if(row<0 || row >boardSize||column<0||column>boardSize||board[row][column] !=' '){
+        if(row<0 || row >=boardSize||column<0||column>=boardSize||board[row][column] !=' '){
             printf("\n1. row and column must be between 1 and 2.");
-            printf("\n2. Can select only empty cells\n");
+            printf("\n2. Can select only empty cells\n\n");
             continue;
         }
 
         board[row][column] = player;
 
-        if (player == 'X' && gameChoice != 2){
-                player = 'O';
-                break;
-            // printf("\nPlayer has changed to O\n");
-        }
-        else{
-            player = 'X';
-            break;
-        }
-
+        break;
 
     }
 
@@ -128,8 +131,44 @@ void acceptComputerInput(){
         getRandomNumber(&randInt1,&randInt2,boardSize);   
     }
     
-    board[randInt1][randInt2] = 'O';
-    printf("---- Computer choose row = %d and column = %d ----\n",randInt1,randInt2);
+    board[randInt1][randInt2] = player;
+    printf("---- Computer choose row = %d and column = %d ----\n\n",randInt1,randInt2);
+
+
+
+}
+
+void logResult(char status){
+    FILE *f = fopen("game_log.txt","a");
+    if(f == NULL){
+        printf("Error opening file\n");
+        return;
+    }
+    
+    time_t now = time(NULL);
+    fprintf(f,"Date: %s",ctime(&now));
+
+    if (status == 'D') {
+        fprintf(f, "Result: Draw\n");
+    }
+    else if(status == 'M'){
+        fprintf(f, "Move made by Player %c\n", player);
+
+    }
+    else {
+        fprintf(f, "Winner: Player %c\n", status);
+    }
+
+    fprintf(f, "Board Size: %d\n", boardSize);
+    for (int i = 0; i < boardSize; i++) {
+        for (int j = 0; j < boardSize; j++) {
+            fprintf(f, "%c ", board[i][j]);
+        }
+        fprintf(f, "\n");
+    }
+    fprintf(f, "-------------------------\n\n");
+
+    fclose(f);
 
 
 
@@ -149,6 +188,7 @@ bool checkWin() {
         }
         if (win) {
             printf("\nPlayer %c has won!\n", first);
+            logResult(first);
             return true;
         }
     }
@@ -166,6 +206,7 @@ bool checkWin() {
         }
         if (win) {
             printf("\nPlayer %c has won!\n", first);
+            logResult(first);
             return true;
         }
     }
@@ -182,6 +223,7 @@ bool checkWin() {
         }
         if (win) {
             printf("\nPlayer %c has won!\n", first);
+            logResult(first);
             return true;
         }
     }
@@ -198,6 +240,7 @@ bool checkWin() {
         }
         if (win) {
             printf("\nPlayer %c has won!\n", first);
+            logResult(first);
             return true;
         }
     }
@@ -217,6 +260,7 @@ bool checkDraw(){
 
     }
     printf("\nGame has drawn\n");
+    logResult('D');
     return true;
 
     
@@ -230,6 +274,12 @@ void askRoles(){
     
 
 }
+void choosePlayer(){
+    printf("What Player symbol do you want(X-O-Z)?: ");
+    scanf("%c",&player);
+    player = toupper(player);
+
+}
 
 
 int main(){
@@ -238,48 +288,62 @@ int main(){
     printf("    Welcome to Tic-Tac-Toe\n");
     printf("===============================\n\n");
     initializeBoard();
-
     gameChoice = gameMode();
+
     if(gameChoice == 1){
-        displayBoard();
-
-        while (true)
-        {
-            acceptUserInput();
-            displayBoard();
-            if (checkWin()) break;
-            if (checkDraw()) break;
-
-
-        }
-
+        totalPlayers = 2;
     }
-    else if (gameChoice == 2)
-    {
-        
-        displayBoard();
-        while(true){
-            getRandomNumber(&randInt1,&randInt2,boardSize);
-            acceptUserInput();
-            displayBoard();
-            if (checkWin()) break;
-            if (checkDraw()) break;
-            acceptComputerInput();
-            displayBoard();
-            if (checkWin()) break;
-            if (checkDraw()) break;
-
-            
-        }
+    else if(gameChoice ==2){
+        totalPlayers = 2;
     }
-
-    else if(gameChoice == 3){
+    else if(gameChoice ==3){
+        totalPlayers =3;
         askRoles();
-        if(askRole == 1){
+    }
 
+    player= players[currentPlayerIndex];
+    displayBoard();
 
+    while(true){
+        if(gameChoice == 1){
+            acceptUserInput();
         }
-        else if(askRole == 2);
+        else if(gameChoice == 2){
+            if(player == 'X'){
+                acceptUserInput();
+            }
+            else{
+                acceptComputerInput();
+            }
+        }
+        else if(gameChoice == 3){
+            if(askRole == 1){
+                if(player == 'X' || player == 'O'){
+                    acceptUserInput();
+                }
+                else{
+                    acceptComputerInput();
+                }
+
+            }
+            else if(askRole == 2){
+                if(player == 'X'){
+                    acceptUserInput();
+                }
+                else{
+                    acceptComputerInput();
+                }
+            }
+        }
+
+        logResult('M');
+
+        displayBoard();
+        if (checkWin()) break;
+        if (checkDraw()) break;
+
+        currentPlayerIndex = (currentPlayerIndex +1) %totalPlayers;
+        player = players[currentPlayerIndex];
     }
     
 
@@ -289,6 +353,8 @@ int main(){
     free(board[i]);
     }
     free(board);
+
+    return 0;
 
 }
 
