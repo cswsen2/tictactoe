@@ -1,11 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
-#include<time.h>
-#include<ctype.h>
+#include "tic_tac_toe.h"
 
 char **board;
-// char player = 'X';
 int gameChoice;
 int randInt1,randInt2;
 int boardSize;
@@ -17,16 +12,15 @@ int totalPlayers;
 
 int getRandomNumber(int *rand1,int *rand2,int size){
 
+    // Generate Random numbers based on boardSize
     *rand1 = rand()%size;
     *rand2 = rand()%size;
 
     return 0;
-    // printf("\nRandom number: %d\n",randInt);
+    
 }
 
 void initializeBoard(){
-    // printf("Enter a board size: ");
-    // scanf("%d",&boardSize);
     
     do{
         printf("Enter a board size: ");
@@ -34,7 +28,7 @@ void initializeBoard(){
     }while (boardSize<3 || boardSize >10);
     
     
-
+    //Allocate memory for board
     board = (char**)malloc(boardSize*sizeof(char*));
 
     for(int i =0; i<boardSize;i++){
@@ -51,6 +45,7 @@ void initializeBoard(){
 int gameMode(){
     int choiceNumber;
 
+    //Ask the player in which mode they want to play
     printf("\n------How do you want to play this Game------");
     printf("\n1. Press 1 for 2 players");
     printf("\n2. Press 2 to play against the computer");
@@ -65,6 +60,7 @@ int gameMode(){
 
 void displayBoard() {
     
+    //print the numbers for top border
     printf("    ");
     for (int j = 0; j < boardSize; j++) {
         printf(" %d  ", j);
@@ -102,8 +98,10 @@ void acceptUserInput(){
         printf("----Player %c turn----",player);
         printf("\nEnter a row and column(0-%d)?: ",boardSize-1);
 
+        //checks only if numbers are there
         if(scanf("%d %d", &row, &column) != 2){
             printf("\nPlease enter numbers only\n");
+            //clears the buffer
             while (getchar() != '\n');
             continue;
         }
@@ -114,6 +112,7 @@ void acceptUserInput(){
             continue;
         }
 
+        //assign the symbol to the correct row and column
         board[row][column] = player;
 
         break;
@@ -126,6 +125,8 @@ void acceptUserInput(){
 
 void acceptComputerInput(){
     printf("\n---- Computers Turn -----\n");
+
+    //checks if all blocks are occupied
     while (board[randInt1][randInt2] != ' ')
     {
         getRandomNumber(&randInt1,&randInt2,boardSize);   
@@ -139,12 +140,16 @@ void acceptComputerInput(){
 }
 
 void logResult(char status){
+    //open a text file to append it
     FILE *f = fopen("game_log.txt","a");
+
+    //check if file got a error
     if(f == NULL){
         printf("Error opening file\n");
         return;
     }
     
+    //starts a time object
     time_t now = time(NULL);
     fprintf(f,"Date: %s",ctime(&now));
 
@@ -159,6 +164,7 @@ void logResult(char status){
         fprintf(f, "Winner: Player %c\n", status);
     }
 
+    //prints the board to the file
     fprintf(f, "Board Size: %d\n", boardSize);
     for (int i = 0; i < boardSize; i++) {
         for (int j = 0; j < boardSize; j++) {
@@ -250,6 +256,7 @@ bool checkWin() {
 
 
 bool checkDraw(){
+    //checks if all blocks are occupied
     for(int i = 0;i<boardSize;i++){
         for(int j = 0;j < boardSize;j++){
             if (board[i][j] == ' '){
@@ -274,12 +281,6 @@ void askRoles(){
     
 
 }
-void choosePlayer(){
-    printf("What Player symbol do you want(X-O-Z)?: ");
-    scanf("%c",&player);
-    player = toupper(player);
-
-}
 
 
 int main(){
@@ -290,6 +291,7 @@ int main(){
     initializeBoard();
     gameChoice = gameMode();
 
+    //asks for the Game mode
     if(gameChoice == 1){
         totalPlayers = 2;
     }
@@ -301,6 +303,7 @@ int main(){
         askRoles();
     }
 
+    //assigns the first player symbol
     player= players[currentPlayerIndex];
     displayBoard();
 
@@ -339,16 +342,19 @@ int main(){
         logResult('M');
 
         displayBoard();
+
+
+        //check for win and then draw
         if (checkWin()) break;
         if (checkDraw()) break;
 
+        //changes player symbol every loop
         currentPlayerIndex = (currentPlayerIndex +1) %totalPlayers;
         player = players[currentPlayerIndex];
     }
     
-
     
-    
+    //free the allocated memory
     for (int i = 0; i < boardSize; i++) {
     free(board[i]);
     }

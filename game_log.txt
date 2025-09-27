@@ -70,3 +70,1111 @@ X X O
 O O O 
 -------------------------
 
+Date: Sat Sep 27 13:50:28 2025
+Move made by Player X
+Board Size: 3
+X     
+      
+      
+-------------------------
+
+Date: Sat Sep 27 13:50:31 2025
+Move made by Player O
+Board Size: 3
+X     
+  O   
+      
+-------------------------
+
+Date: Sat Sep 27 13:50:34 2025
+Move made by Player X
+Board Size: 3
+X X   
+  O   
+      
+-------------------------
+
+Date: Sat Sep 27 13:50:37 2025
+Move made by Player O
+Board Size: 3
+X X   
+  O   
+    O 
+-------------------------
+
+Date: Sat Sep 27 13:50:40 2025
+Move made by Player X
+Board Size: 3
+X X X 
+  O   
+    O 
+-------------------------
+
+Date: Sat Sep 27 13:50:40 2025
+Winner: Player X
+Board Size: 3
+X X X 
+  O   
+    O 
+-------------------------
+
+Date: Sat Sep 27 13:50:58 2025
+Move made by Player X
+Board Size: 3
+X     
+      
+      
+-------------------------
+
+Date: Sat Sep 27 13:50:58 2025
+Move made by Player O
+Board Size: 3
+X O   
+      
+      
+-------------------------
+
+Date: Sat Sep 27 13:51:00 2025
+Move made by Player X
+Board Size: 3
+X O   
+  X   
+      
+-------------------------
+
+Date: Sat Sep 27 13:51:00 2025
+Move made by Player O
+Board Size: 3
+X O O 
+  X   
+      
+-------------------------
+
+Date: Sat Sep 27 13:51:02 2025
+Move made by Player X
+Board Size: 3
+X O O 
+  X   
+    X 
+-------------------------
+
+Date: Sat Sep 27 13:51:02 2025
+Winner: Player X
+Board Size: 3
+X O O 
+  X   
+    X 
+-------------------------
+
+Date: Sat Sep 27 13:51:20 2025
+Move made by Player X
+Board Size: 3
+X     
+      
+      
+-------------------------
+
+Date: Sat Sep 27 13:51:22 2025
+Move made by Player O
+Board Size: 3
+X     
+    O 
+      
+-------------------------
+
+Date: Sat Sep 27 13:51:22 2025
+Move made by Player Z
+Board Size: 3
+X     
+    O 
+    Z 
+-------------------------
+
+Date: Sat Sep 27 13:51:31 2025
+Move made by Player X
+Board Size: 3
+X     
+    O 
+X   Z 
+-------------------------
+
+Date: Sat Sep 27 13:51:34 2025
+Move made by Player O
+Board Size: 3
+X     
+  O O 
+X   Z 
+-------------------------
+
+Date: Sat Sep 27 13:51:34 2025
+Move made by Player Z
+Board Size: 3
+X   Z 
+  O O 
+X   Z 
+-------------------------
+
+Date: Sat Sep 27 13:51:38 2025
+Move made by Player X
+Board Size: 3
+X   Z 
+  O O 
+X X Z 
+-------------------------
+
+Date: Sat Sep 27 13:51:41 2025
+Move made by Player O
+Board Size: 3
+X   Z 
+O O O 
+X X Z 
+-------------------------
+
+Date: Sat Sep 27 13:51:41 2025
+Winner: Player O
+Board Size: 3
+X   Z 
+O O O 
+X X Z 
+-------------------------
+
+Date: Sat Sep 27 13:52:02 2025
+Move made by Player X
+Board Size: 5
+X         
+          
+          
+          
+          
+-------------------------
+
+Date: Sat Sep 27 13:52:02 2025
+Move made by Player O
+Board Size: 5
+X         
+          
+          
+        O 
+          
+-------------------------
+
+Date: Sat Sep 27 13:52:02 2025
+Move made by Player Z
+Board Size: 5
+X         
+    Z     
+          
+        O 
+          
+-------------------------
+
+Date: Sat Sep 27 13:52:05 2025
+Move made by Player X
+Board Size: 5
+X         
+  X Z     
+          
+        O 
+          
+-------------------------
+
+Date: Sat Sep 27 13:52:05 2025
+Move made by Player O
+Board Size: 5
+X         
+  X Z     
+          
+        O 
+O         
+-------------------------
+
+Date: Sat Sep 27 13:52:05 2025
+Move made by Player Z
+Board Size: 5
+X         
+  X Z     
+          
+      Z O 
+O         
+-------------------------
+
+Date: Sat Sep 27 13:52:10 2025
+Move made by Player X
+Board Size: 5
+X X       
+  X Z     
+          
+      Z O 
+O         
+-------------------------
+
+Date: Sat Sep 27 13:52:10 2025
+Move made by Player O
+Board Size: 5
+X X       
+  X Z O   
+          
+      Z O 
+O         
+-------------------------
+
+Date: Sat Sep 27 13:52:10 2025
+Move made by Player Z
+Board Size: 5
+X X       
+  X Z O   
+          
+    Z Z O 
+O         
+-------------------------
+
+Date: Sat Sep 27 13:52:16 2025
+Move made by Player X
+Board Size: 5
+X X X     
+  X Z O   
+          
+    Z Z O 
+O         
+-------------------------
+
+Date: Sat Sep 27 13:52:16 2025
+Move made by Player O
+Board Size: 5
+X X X   O 
+  X Z O   
+          
+    Z Z O 
+O         
+-------------------------
+
+Date: Sat Sep 27 13:52:16 2025
+Move made by Player Z
+Board Size: 5
+X X X   O 
+  X Z O   
+          
+  Z Z Z O 
+O         
+-------------------------
+
+Date: Sat Sep 27 13:52:34 2025
+Move made by Player X
+Board Size: 5
+X X X   O 
+  X Z O   
+X         
+  Z Z Z O 
+O         
+-------------------------
+
+Date: Sat Sep 27 13:52:34 2025
+Move made by Player O
+Board Size: 5
+X X X   O 
+O X Z O   
+X         
+  Z Z Z O 
+O         
+-------------------------
+
+Date: Sat Sep 27 13:52:34 2025
+Move made by Player Z
+Board Size: 5
+X X X   O 
+O X Z O   
+X         
+  Z Z Z O 
+O       Z 
+-------------------------
+
+Date: Sat Sep 27 13:52:43 2025
+Move made by Player X
+Board Size: 5
+X X X   O 
+O X Z O   
+X X       
+  Z Z Z O 
+O       Z 
+-------------------------
+
+Date: Sat Sep 27 13:52:43 2025
+Move made by Player O
+Board Size: 5
+X X X O O 
+O X Z O   
+X X       
+  Z Z Z O 
+O       Z 
+-------------------------
+
+Date: Sat Sep 27 13:52:44 2025
+Move made by Player Z
+Board Size: 5
+X X X O O 
+O X Z O Z 
+X X       
+  Z Z Z O 
+O       Z 
+-------------------------
+
+Date: Sat Sep 27 13:52:46 2025
+Move made by Player X
+Board Size: 5
+X X X O O 
+O X Z O Z 
+X X X     
+  Z Z Z O 
+O       Z 
+-------------------------
+
+Date: Sat Sep 27 13:52:46 2025
+Move made by Player O
+Board Size: 5
+X X X O O 
+O X Z O Z 
+X X X   O 
+  Z Z Z O 
+O       Z 
+-------------------------
+
+Date: Sat Sep 27 13:52:46 2025
+Move made by Player Z
+Board Size: 5
+X X X O O 
+O X Z O Z 
+X X X   O 
+  Z Z Z O 
+O Z     Z 
+-------------------------
+
+Date: Sat Sep 27 13:52:49 2025
+Move made by Player X
+Board Size: 5
+X X X O O 
+O X Z O Z 
+X X X X O 
+  Z Z Z O 
+O Z     Z 
+-------------------------
+
+Date: Sat Sep 27 13:52:49 2025
+Move made by Player O
+Board Size: 5
+X X X O O 
+O X Z O Z 
+X X X X O 
+O Z Z Z O 
+O Z     Z 
+-------------------------
+
+Date: Sat Sep 27 13:52:49 2025
+Move made by Player Z
+Board Size: 5
+X X X O O 
+O X Z O Z 
+X X X X O 
+O Z Z Z O 
+O Z Z   Z 
+-------------------------
+
+Date: Sat Sep 27 13:52:55 2025
+Move made by Player X
+Board Size: 5
+X X X O O 
+O X Z O Z 
+X X X X O 
+O Z Z Z O 
+O Z Z X Z 
+-------------------------
+
+Date: Sat Sep 27 13:52:55 2025
+Result: Draw
+Board Size: 5
+X X X O O 
+O X Z O Z 
+X X X X O 
+O Z Z Z O 
+O Z Z X Z 
+-------------------------
+
+Date: Sat Sep 27 14:08:23 2025
+Move made by Player X
+Board Size: 10
+X                   
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+-------------------------
+
+Date: Sat Sep 27 14:08:23 2025
+Move made by Player O
+Board Size: 10
+X                   
+                    
+                    
+                    
+              O     
+                    
+                    
+                    
+                    
+                    
+-------------------------
+
+Date: Sat Sep 27 14:08:23 2025
+Move made by Player Z
+Board Size: 10
+X                   
+          Z         
+                    
+                    
+              O     
+                    
+                    
+                    
+                    
+                    
+-------------------------
+
+Date: Sat Sep 27 14:08:25 2025
+Move made by Player X
+Board Size: 10
+X                   
+  X       Z         
+                    
+                    
+              O     
+                    
+                    
+                    
+                    
+                    
+-------------------------
+
+Date: Sat Sep 27 14:08:25 2025
+Move made by Player O
+Board Size: 10
+X                   
+  X       Z         
+                    
+                    
+        O     O     
+                    
+                    
+                    
+                    
+                    
+-------------------------
+
+Date: Sat Sep 27 14:08:25 2025
+Move made by Player Z
+Board Size: 10
+X                   
+  X       Z         
+                    
+                    
+        O     O   Z 
+                    
+                    
+                    
+                    
+                    
+-------------------------
+
+Date: Sat Sep 27 14:08:31 2025
+Move made by Player X
+Board Size: 10
+X X                 
+  X       Z         
+                    
+                    
+        O     O   Z 
+                    
+                    
+                    
+                    
+                    
+-------------------------
+
+Date: Sat Sep 27 14:08:31 2025
+Move made by Player O
+Board Size: 10
+X X                 
+  X       Z         
+            O       
+                    
+        O     O   Z 
+                    
+                    
+                    
+                    
+                    
+-------------------------
+
+Date: Sat Sep 27 14:08:31 2025
+Move made by Player Z
+Board Size: 10
+X X                 
+  X       Z         
+            O       
+                    
+        O     O   Z 
+                    
+                    
+                    
+          Z         
+                    
+-------------------------
+
+Date: Sat Sep 27 14:08:57 2025
+Move made by Player X
+Board Size: 10
+X                   
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+-------------------------
+
+Date: Sat Sep 27 14:08:57 2025
+Move made by Player O
+Board Size: 10
+X                   
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                O   
+                    
+-------------------------
+
+Date: Sat Sep 27 14:08:57 2025
+Move made by Player Z
+Board Size: 10
+X                   
+                    
+                    
+                    
+                    
+                    
+  Z                 
+                    
+                O   
+                    
+-------------------------
+
+Date: Sat Sep 27 14:09:03 2025
+Move made by Player X
+Board Size: 10
+X X                 
+                    
+                    
+                    
+                    
+                    
+  Z                 
+                    
+                O   
+                    
+-------------------------
+
+Date: Sat Sep 27 14:09:03 2025
+Move made by Player O
+Board Size: 10
+X X                 
+                    
+                    
+                    
+                    
+                    
+  Z                 
+O                   
+                O   
+                    
+-------------------------
+
+Date: Sat Sep 27 14:09:03 2025
+Move made by Player Z
+Board Size: 10
+X X                 
+                    
+                    
+        Z           
+                    
+                    
+  Z                 
+O                   
+                O   
+                    
+-------------------------
+
+Date: Sat Sep 27 14:09:06 2025
+Move made by Player X
+Board Size: 10
+X X X               
+                    
+                    
+        Z           
+                    
+                    
+  Z                 
+O                   
+                O   
+                    
+-------------------------
+
+Date: Sat Sep 27 14:09:06 2025
+Move made by Player O
+Board Size: 10
+X X X               
+                    
+                    
+        Z           
+  O                 
+                    
+  Z                 
+O                   
+                O   
+                    
+-------------------------
+
+Date: Sat Sep 27 14:09:06 2025
+Move made by Player Z
+Board Size: 10
+X X X               
+                    
+                    
+        Z           
+  O                 
+                    
+  Z                 
+O                   
+                O   
+                Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:08 2025
+Move made by Player X
+Board Size: 10
+X X X X             
+                    
+                    
+        Z           
+  O                 
+                    
+  Z                 
+O                   
+                O   
+                Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:08 2025
+Move made by Player O
+Board Size: 10
+X X X X             
+                    
+                    
+        Z           
+  O                 
+                    
+  Z                 
+O                   
+                O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:08 2025
+Move made by Player Z
+Board Size: 10
+X X X X             
+                    
+                    
+        Z       Z   
+  O                 
+                    
+  Z                 
+O                   
+                O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:10 2025
+Move made by Player X
+Board Size: 10
+X X X X X           
+                    
+                    
+        Z       Z   
+  O                 
+                    
+  Z                 
+O                   
+                O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:10 2025
+Move made by Player O
+Board Size: 10
+X X X X X           
+                    
+                    
+        Z       Z   
+  O                 
+                    
+  Z                 
+O                   
+    O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:10 2025
+Move made by Player Z
+Board Size: 10
+X X X X X           
+                    
+                    
+        Z       Z   
+  O Z               
+                    
+  Z                 
+O                   
+    O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:12 2025
+Move made by Player X
+Board Size: 10
+X X X X X X         
+                    
+                    
+        Z       Z   
+  O Z               
+                    
+  Z                 
+O                   
+    O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:12 2025
+Move made by Player O
+Board Size: 10
+X X X X X X         
+                    
+                    
+        Z       Z   
+  O Z   O           
+                    
+  Z                 
+O                   
+    O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:12 2025
+Move made by Player Z
+Board Size: 10
+X X X X X X         
+                    
+                    
+        Z       Z   
+  O Z   O           
+Z                   
+  Z                 
+O                   
+    O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:14 2025
+Move made by Player X
+Board Size: 10
+X X X X X X X       
+                    
+                    
+        Z       Z   
+  O Z   O           
+Z                   
+  Z                 
+O                   
+    O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:14 2025
+Move made by Player O
+Board Size: 10
+X X X X X X X       
+O                   
+                    
+        Z       Z   
+  O Z   O           
+Z                   
+  Z                 
+O                   
+    O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:14 2025
+Move made by Player Z
+Board Size: 10
+X X X X X X X       
+O                   
+                    
+        Z       Z   
+  O Z   O           
+Z             Z     
+  Z                 
+O                   
+    O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:16 2025
+Move made by Player X
+Board Size: 10
+X X X X X X X X     
+O                   
+                    
+        Z       Z   
+  O Z   O           
+Z             Z     
+  Z                 
+O                   
+    O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:16 2025
+Move made by Player O
+Board Size: 10
+X X X X X X X X     
+O   O               
+                    
+        Z       Z   
+  O Z   O           
+Z             Z     
+  Z                 
+O                   
+    O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:16 2025
+Move made by Player Z
+Board Size: 10
+X X X X X X X X     
+O   O               
+                    
+        Z       Z   
+  O Z   O           
+Z             Z     
+  Z                 
+O                   
+  Z O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:18 2025
+Move made by Player X
+Board Size: 10
+X X X X X X X X X   
+O   O               
+                    
+        Z       Z   
+  O Z   O           
+Z             Z     
+  Z                 
+O                   
+  Z O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:18 2025
+Move made by Player O
+Board Size: 10
+X X X X X X X X X   
+O   O           O   
+                    
+        Z       Z   
+  O Z   O           
+Z             Z     
+  Z                 
+O                   
+  Z O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:18 2025
+Move made by Player Z
+Board Size: 10
+X X X X X X X X X   
+O   O           O   
+                    
+        Z       Z   
+  O Z   O       Z   
+Z             Z     
+  Z                 
+O                   
+  Z O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:22 2025
+Move made by Player X
+Board Size: 10
+X X X X X X X X X X 
+O   O           O   
+                    
+        Z       Z   
+  O Z   O       Z   
+Z             Z     
+  Z                 
+O                   
+  Z O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:22 2025
+Winner: Player X
+Board Size: 10
+X X X X X X X X X X 
+O   O           O   
+                    
+        Z       Z   
+  O Z   O       Z   
+Z             Z     
+  Z                 
+O                   
+  Z O           O   
+  O             Z   
+-------------------------
+
+Date: Sat Sep 27 14:09:45 2025
+Move made by Player X
+Board Size: 3
+X     
+      
+      
+-------------------------
+
+Date: Sat Sep 27 14:09:47 2025
+Move made by Player O
+Board Size: 3
+X     
+  O   
+      
+-------------------------
+
+Date: Sat Sep 27 14:10:08 2025
+Move made by Player X
+Board Size: 3
+X     
+      
+      
+-------------------------
+
+Date: Sat Sep 27 14:10:08 2025
+Move made by Player O
+Board Size: 3
+X     
+    O 
+      
+-------------------------
+
+Date: Sat Sep 27 14:10:11 2025
+Move made by Player X
+Board Size: 3
+X X   
+    O 
+      
+-------------------------
+
+Date: Sat Sep 27 14:10:11 2025
+Move made by Player O
+Board Size: 3
+X X   
+O   O 
+      
+-------------------------
+
+Date: Sat Sep 27 14:10:17 2025
+Move made by Player X
+Board Size: 3
+X X   
+O   O 
+X     
+-------------------------
+
+Date: Sat Sep 27 14:10:17 2025
+Move made by Player O
+Board Size: 3
+X X   
+O   O 
+X   O 
+-------------------------
+
+Date: Sat Sep 27 14:10:21 2025
+Move made by Player X
+Board Size: 3
+X X   
+O   O 
+X X O 
+-------------------------
+
+Date: Sat Sep 27 14:10:21 2025
+Move made by Player O
+Board Size: 3
+X X   
+O O O 
+X X O 
+-------------------------
+
+Date: Sat Sep 27 14:10:21 2025
+Winner: Player O
+Board Size: 3
+X X   
+O O O 
+X X O 
+-------------------------
+
+Date: Sat Sep 27 14:13:00 2025
+Move made by Player X
+Board Size: 6
+X           
+            
+            
+            
+            
+            
+-------------------------
+
+Date: Sat Sep 27 14:13:00 2025
+Move made by Player O
+Board Size: 6
+X     O     
+            
+            
+            
+            
+            
+-------------------------
+
